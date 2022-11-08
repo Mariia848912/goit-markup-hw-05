@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="container hero-information">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <!--Переваги компанії-->
@@ -127,25 +129,40 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list about-work">
             <li class="item">
-              <img
-                src="./images/types-of-work/types-of-work-1.jpg"
-                alt="Вид робіт 1"
-                width="370"
-              />
+              <div class="wrapper">
+                <img
+                  src="./images/types-of-work/types-of-work-1.jpg"
+                  alt="Вид робіт 1"
+                  width="370"
+                />
+                <div class="box-text">
+                  <p class="text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/types-of-work/types-of-work-2.jpg"
-                alt="Вид робіт 2"
-                width="370"
-              />
+              <div class="wrapper">
+                <img
+                  src="./images/types-of-work/types-of-work-2.jpg"
+                  alt="Вид робіт 2"
+                  width="370"
+                />
+                <div class="box-text">
+                  <p class="text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/types-of-work/types-of-work-3.jpg"
-                alt="Вид робіт 3"
-                width="370"
-              />
+              <div class="wrapper">
+                <img
+                  src="./images/types-of-work/types-of-work-3.jpg"
+                  alt="Вид робіт 3"
+                  width="370"
+                />
+                <div class="box-text">
+                  <p class="text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -595,5 +612,16 @@
         </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="close-btn-icon" width="18" height="18">
+            <use href="./images/sprite.svg#close-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
